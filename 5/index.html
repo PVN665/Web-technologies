@@ -1,0 +1,44 @@
+<style>
+    .var_draw
+    {
+        display: flex;
+    }
+    .button
+    {
+        display: flex;
+        background-color: rgb(252, 243, 128);
+    }
+</style>
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <div id="myLegend"></div>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <div class="var_draw">
+        <div>
+            <label >Ключ</label>
+            <input type="text"name="example1"id="key"size="20">
+        </div>
+        
+        <div>
+            <label >Значение</label>
+            <input type="text"name="example2"id="value"size="20">
+        </div>
+    </div>
+    <p></p>
+
+    <button class="button" onclick="draw()">
+        <p>Рисовать</p>
+    </button>
+</body>
+</html>
